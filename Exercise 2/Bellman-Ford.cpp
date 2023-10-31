@@ -33,9 +33,7 @@ void printArr(int dist[], int n) {
         printf("%d \t\t %d\n", i, dist[i]);
 }
 
-// The main function that finds shortest distances from src
-// to all other vertices using the Bellman-Ford algorithm.
-// The function also detects a negative weight cycle.
+// The main function that finds shortest distances from src to all other vertices using the Bellman-Ford algorithm.
 void BellmanFord(struct Graph* graph, int src) {
     int V = graph->V;
     int E = graph->E;	
@@ -76,9 +74,7 @@ void BellmanFord(struct Graph* graph, int src) {
     return;
 }
 
-// Driver's code
 int main() {
-    /* Let us create the graph given in the above example */
     int V = 4; // Number of vertices in the graph
     int E = 4; // Number of edges in the graph
     struct Graph* graph = createGraph(V, E);
